@@ -24,6 +24,9 @@ Compelling includes a special template that can be used to create a unique front
 
 ## Changelog
 
+* Version 1.0.4, October 6, 2017
+  * Search widget looks correct when no title is selected
+  * Customizer sections appear correctly, sort of
 * Version 1.0.3, September 26, 2017
 	* Fixed an error in `compelling_fonts_url()`
 * Version 1.0.2, September 1, 2017

@@ -3,7 +3,7 @@ Theme Name: Compelling
 Author: Stephen Dickinson
 Author URI: http://stephencottontail.com/
 Description: Your blog deserves the best. Bold. Beautiful. Compelling.
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: compelling
@@ -434,5 +434,8 @@ img, figure { margin: 0; max-width: 100%; height: auto; }
 .widget_rss ul { padding: 0; list-style: none; }
 .widget_rss li { margin: 12px 0; }
 .widget_rss .rss-date { display: block; font: italic 16px "Cormorant Garamond", "Georgia", serif; text-transform: lowercase; }
+
+.widget_search { position: static; }
+.widget_search:before { display: none; }
 
 .sticky { /* required for theme review */ }
