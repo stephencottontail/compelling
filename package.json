@@ -1,0 +1,31 @@
+{
+  "name": "compelling",
+  "version": "1.0.4",
+  "description": "Your blog deserves the best. Bold. Beautiful. Compelling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wp",
+    "theme"
+  ],
+  "author": "Stephen Dickinson <stephencottontail@me.com>",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephencottontail/compelling.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stephencottontail/compelling/issues"
+  },
+  "homepage": "https://github.com/stephencottontail/compelling#readme"
+}
