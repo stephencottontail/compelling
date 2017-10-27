@@ -51,7 +51,7 @@ jQuery( document ).ready( function( $ ) {
 				func.apply( context, args );
 			}
 		};
-	};
+	}
 	
 	var shouldPanelMove = debounce( function() {
 		if ( ! body.hasClass( 'admin-bar' ) || $( window ).width() > 782 ) {

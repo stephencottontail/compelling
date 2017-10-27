@@ -13,7 +13,7 @@
 	<?php
 	if ( has_post_thumbnail() ) :
 		if ( is_singular() ) {
-			$destination = get_attachment_link( get_post_thumbnail_id() );
+			$destination = esc_url( get_attachment_link( get_post_thumbnail_id() ) );
 		} else {
 			$destination = esc_url( get_permalink() );
 		}

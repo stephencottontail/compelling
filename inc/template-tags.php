@@ -73,7 +73,6 @@ if ( ! function_exists( 'compelling_show_comment' ) ) :
  * Custom function to display comments
  */
 function compelling_show_comment( $comment, $args, $depth ) {
-	$GLOBALS['comment'] = $comment;
 	global $post;
   
 	if ( 'pingback' == $comment->comment_type || 'trackback' == $comment->comment_type ) : ?>
