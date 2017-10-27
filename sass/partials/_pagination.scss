@@ -1,0 +1,10 @@
+.page-links {
+	@include normalize-padding( 0.5 0 );
+
+	font: italic $base-font-size $base-header-font;
+	text-transform: lowercase;
+	
+	.page-number {
+		@include normalize-padding( 0 0.25 );
+	}
+}

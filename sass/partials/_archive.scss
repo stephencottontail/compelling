@@ -1,0 +1,27 @@
+.archive-header {
+	@include left-column();
+	@include normalize-margin( 0 1 0 3 );
+	@include normalize-padding( 0 0 1 );
+	
+	background-color: $background-color;
+	border-bottom: 1px solid $border-color;
+	
+	@media #{$tablet-up} {
+		@include normalize-margin( 0 1 );
+		
+		border-bottom: none;
+	}
+}
+
+.archive-title {
+	@include normalize-margin( 1 0 0 );
+	
+	line-height: $base-line-height * 1.5;
+	word-wrap: break-word;
+}
+
+.archive-description {
+	@include normalize-margin( 0 );
+	
+	font-style: italic;
+}

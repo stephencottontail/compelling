@@ -1,0 +1,8 @@
+.site-header {
+	@include right-column();
+}
+
+.site-title,
+.site-description {
+	text-align: left;
+}

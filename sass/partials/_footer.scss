@@ -1,0 +1,14 @@
+.site-footer {
+	@include normalize-padding( 0 1 );
+}
+
+.site-info {
+	@include normalize-padding( 0.5 0 );
+	
+	font: italic $base-font-size $base-header-font;
+	text-align: center;
+	
+	@media #{$tablet-up} {
+		text-align: right;
+	}
+}

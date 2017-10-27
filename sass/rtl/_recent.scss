@@ -1,0 +1,8 @@
+.recent-posts {
+	@include right-column();
+	@include normalize-margin( 0 3 0 1 );
+	
+	@media #{$tablet-up} {
+		@include normalize-margin( 0 1 );
+	}
+}

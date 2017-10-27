@@ -1,0 +1,10 @@
+.recent-posts {
+	@include left-column();
+	@include normalize-margin( 0 1 0 3 );
+	
+	background-color: $background-color;
+	
+	@media #{$tablet-up} {
+		@include normalize-margin( 0 1 );
+	}
+}

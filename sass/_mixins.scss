@@ -1,0 +1,62 @@
+@mixin normalize-margin-top( $values, $relative-to: $base-font-size ) {
+	@include normalize-rhythm( margin-top, $values, $relative-to );
+}
+
+@mixin normalize-margin-bottom( $values, $relative-to: $base-font-size ) {
+	@include normalize-rhythm( margin-bottom, $values, $relative-to );
+}
+
+@mixin normalize-margin-left( $values, $relative-to: $base-font-size ) {
+	@include normalize-rhythm( margin-left, $values, $relative-to );
+}
+
+@mixin normalize-margin-right( $values, $relative-to: $base-font-size ) {
+	@include normalize-rhythm( margin-right, $values, $relative-to );
+}
+
+@mixin normalize-padding( $values, $relative-to: $base-font-size ) {
+  @include normalize-rhythm( padding, $values, $relative-to );
+}
+
+@mixin normalize-padding-top( $values, $relative-to: $base-font-size ) {
+	@include normalize-rhythm( padding-top, $values, $relative-to );
+}
+
+@mixin normalize-padding-bottom( $values, $relative-to: $base-font-size ) {
+	@include normalize-rhythm( padding-bottom, $values, $relative-to );
+}
+
+@mixin normalize-padding-left( $values, $relative-to: $base-font-size ) {
+	@include normalize-rhythm( padding-left, $values, $relative-to );
+}
+
+@mixin normalize-padding-right( $values, $relative-to: $base-font-size ) {
+	@include normalize-rhythm( padding-right, $values, $relative-to );
+}
+
+@mixin inverse() {
+	background-color: $accent-color;
+	color: $background-color;
+	
+	a {
+		color: $background-color;
+	}
+}
+
+@mixin left-column() {
+	@media #{$tablet-up} {
+		@include normalize-padding( 0 0 0 $side-column-tablet );
+	}
+	
+	@media #{$desktop-up} {
+		@include normalize-padding( 0 0 0 $side-column-desktop );
+	}
+}
+
+@mixin cf() {
+	&:after {
+		clear: both;
+		display: table;
+		content: '';
+	}
+}

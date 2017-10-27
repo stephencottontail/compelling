@@ -1,0 +1,27 @@
+.site-header {
+	@include left-column();
+}
+
+.site-branding {
+	@include normalize-padding( 1 );
+	
+	border-bottom: 2px solid $accent-color;
+	word-wrap: break-word;
+}
+
+.site-title {
+  @include normalize-line-height( $h1-font-size );
+	@include normalize-margin( 0 );
+	
+	font-family: $base-header-font;
+	font-size: ( $h1-font-size * 2 );
+	letter-spacing: -2px;
+	text-align: right;
+}
+
+.site-description {
+	@include normalize-margin( 1 0 0 0 );
+	
+	font-style: italic;
+	text-align: right;
+}

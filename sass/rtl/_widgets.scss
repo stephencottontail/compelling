@@ -1,0 +1,20 @@
+.widget-area {
+	@include right-column();
+	@include normalize-margin( 2 3 0 1 );
+	
+	@media #{$tablet-up} {
+		@include normalize-margin( 2 1 );
+	}
+}
+
+.widget {
+	position: relative;
+	
+	#next {
+		text-align: left;
+	}
+}
+
+.widget-title {
+	@include normalize-padding( 0 0 0 0.5 );
+}

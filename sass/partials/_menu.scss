@@ -1,0 +1,34 @@
+.site-navigation {
+	@include normalize-margin( 0.5 0 );
+	
+	ul {
+		@include normalize-margin( 0 );
+		@include normalize-padding( 0 );
+		
+		list-style: none;
+		text-transform: uppercase;
+		
+		ul {
+			font-size: 0.9em;
+			text-transform: lowercase;
+		}
+		
+		@media #{$tablet-up} {
+			display: block;
+		}
+	}
+	
+	a {
+		@include normalize-padding( 0.25 );
+		
+		display: block;
+		position: relative;
+		
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $hover-link-color;
+			text-decoration: none;
+		}
+	}
+}

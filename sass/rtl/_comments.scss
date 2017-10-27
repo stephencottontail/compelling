@@ -1,0 +1,23 @@
+.comments-area {
+	@include right-column();
+	@include normalize-margin( 0 3 0 1 );
+	
+	background-color: $background-color;
+	
+	@media #{$tablet-up} {
+		@include normalize-margin( 0 1 );
+	}
+	
+	.comment-list,
+	.children {
+		@include normalize-padding( 0 );
+		
+		list-style: none;
+	}
+	
+	@media #{$tablet-up} {
+		.children {
+			@include normalize-padding-right( 2 );
+		}
+	}
+}

@@ -1,0 +1,64 @@
+img, figure {
+	margin: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+.alignleft {
+	@include normalize-margin( 0 1 1 0 );
+	
+	display: inline-block;
+	float: left;
+}
+
+.alignright {
+	@include normalize-margin( 0 0 1 1 );
+	
+	display: inline-block;
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	@include normalize-margin-bottom( 1 );
+	
+	img {
+		width: 100%;
+	}
+}
+
+.wp-caption-text {
+	font: normal $base-font-size $base-header-font;
+	text-align: right;
+}
+
+.gallery {
+	@include normalize-margin-bottom( 1 );
+	
+	clear: both;
+}
+
+.gallery-item {
+	@include normalize-margin-bottom( 1 );
+	
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+	
+	@for $i from 1 to 10 {
+		.gallery-columns-#{$i} & {
+			max-width: 100% / $i;
+		}
+	}
+}
+
+.gallery-caption {
+	text-align: center;
+}

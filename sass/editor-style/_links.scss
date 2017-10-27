@@ -1,0 +1,19 @@
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  
+  color: $link-color;
+  text-decoration: none;
+  transition: #{$transition};
+  
+  &:visited {
+	  color: $hover-link-color;
+  }
+  
+  &:hover,
+  &:active,
+  &:focus {
+	  color: $hover-link-color;
+	  text-decoration: underline;
+  }
+}

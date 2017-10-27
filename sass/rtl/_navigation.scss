@@ -1,0 +1,24 @@
+.navigation {
+	@include right-column();
+	@include normalize-margin( 0 3 0 1 );
+	
+	@media #{$tablet-up} {
+		@include normalize-margin( 0 1 );
+	}
+}
+
+.nav-previous {
+	text-align: center;
+	
+	@media #{$tablet-up} {
+		text-align: right;
+	}
+}
+
+.nav-next {
+	text-align: center;
+	
+	@media #{$tablet-up} {
+		text-align: left;
+	}
+}

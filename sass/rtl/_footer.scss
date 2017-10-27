@@ -1,0 +1,7 @@
+.site-info {
+	text-align: center;
+	
+	@media #{$tablet-up} {
+		text-align: left;
+	}
+}

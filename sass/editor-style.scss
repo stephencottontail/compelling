@@ -1,0 +1,21 @@
+/*
+ * This file controls how the TinyMCE editor is styled.
+ *
+ * It’s generally considered good practice to style the editor
+ * so that users can get an idea of how their posts will look
+ * on the actual site.
+ *
+ * @package Compelling
+ */
+
+@import 'variables';
+@import 'mixins';
+@import 'normalize/vertical-rhythm';
+
+@import 'partials/media';
+
+@import 'editor-style/document';
+@import 'editor-style/grouping';
+@import 'editor-style/heading';
+@import 'editor-style/links';
+@import 'editor-style/media';

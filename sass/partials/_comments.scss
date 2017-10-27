@@ -1,0 +1,112 @@
+.comments-area {
+	@include left-column();
+	@include normalize-margin( 0 1 0 3 );
+	
+	background-color: $background-color;
+	
+	@media #{$tablet-up} {
+		@include normalize-margin( 0 1 );
+	}
+	
+	.comment-list,
+	.children {
+		@include normalize-padding( 0 );
+		
+		list-style: none;
+	}
+	
+	@media #{$tablet-up} {
+		.children {
+			@include normalize-padding-left( 2 );
+		}
+	}
+}
+
+.pingback-body,
+.comment-body {
+	@include normalize-margin-bottom( 2 );
+}
+
+.pingback-header {
+	font: italic $base-font-size $base-header-font;
+	text-transform: lowercase;
+}
+
+.comment-header {
+	@include normalize-margin-bottom( 1 );
+	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+	.fn {
+		@include normalize-padding( 0 1 );
+	}
+	
+	.avatar {
+		border-radius: 50%;
+		
+		.bypostauthor & {
+			border: 2px solid $accent-color;
+		}
+	}
+}
+
+.in-reply-to {
+	@include normalize-padding-top( 0.25 );
+	
+	flex-basis: 100%;
+	font: italic $base-font-size $base-header-font;
+	text-transform: lowercase;
+	
+	@media #{$tablet-up} {
+		display: none;
+	}
+}
+
+.comment-content {
+	@include normalize-margin-bottom( 1 );
+}
+
+.awaiting-moderation {
+	@include normalize-margin-bottom( 1 );
+	
+	display: block;
+	font: italic $base-font-size $base-header-font;
+	opacity: 0.9;
+}
+
+.comment-footer {
+	@include normalize-margin( 0 0 1 );
+	
+	font: italic $base-font-size $base-header-font;
+	text-transform: lowercase;
+	
+	@media #{$tablet-up} {
+		font-size: $base-font-size;
+	}
+	
+	.meta-info {
+		display: block;
+	}
+}
+
+.comment-respond {
+	@include normalize-margin( 0.5 0 );
+	
+	label {
+		@include normalize-padding( 0 0.25 );
+		
+		display: block;
+		font: italic $base-font-size $base-header-font;
+		text-transform: lowercase;
+	}
+	
+	input, textarea {
+		width: 100%;
+	}
+	
+	.submit {
+		width: auto;
+	}
+}

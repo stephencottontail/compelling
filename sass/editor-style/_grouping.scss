@@ -1,0 +1,63 @@
+%monospace {
+  font-family: $base-code-font, monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+blockquote {
+  @include normalize-margin( 1 0 );
+  @include normalize-padding( 1 );
+  
+  position: relative;
+  background-color: rgba( $accent-color, 0.15 );
+  border-left: 2px solid $accent-color;
+  
+  p {
+    @include normalize-margin( 0 );
+  }
+}
+
+ol,
+ul {
+  @include normalize-margin( 1 0 );
+  @include normalize-padding( 0 0 0 1 );
+  
+  ol,
+  ul {
+    @include normalize-margin( 0 );
+  }
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+  @include normalize-margin( 0 0 0.5 );
+}
+
+p {
+	@include normalize-margin( 0 0 1 0 );
+}
+
+pre {
+	@extend %monospace;
+	
+ 	max-width: 100%;
+	overflow: auto;
+	word-wrap: break-word;
+}
+
+table {
+	@include normalize-margin( 1 0 );
+	
+	border: 1px solid $border-color;
+	border-collapse: collapse;
+	max-width: 100%;
+	
+	th,
+	td {
+		@include normalize-padding( 0.25 );
+		
+		border: 1px solid $border-color;
+	}
+}

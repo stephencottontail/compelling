@@ -1,0 +1,31 @@
+.front {
+	@include normalize-padding-top( 2 );
+	@include normalize-padding-bottom( 1 );
+	
+	background-color: $accent-color;
+	color: $background-color;
+	
+	a {
+		color: $background-color;
+		text-decoration: underline;
+	}
+	
+	.entry-title {
+		@include normalize-margin( 0 );
+		@include normalize-font-size( $h1-font-size * 2 );
+		@include normalize-line-height( $h1-font-size * 2 );
+	}
+	
+	.entry-inner {
+		background-color: $accent-color;
+		font: normal 1.1em $base-header-font;
+	}
+}
+
+.see-more {
+	@include normalize-padding( 1 0 );
+	
+	display: block;
+	font: italic ( $base-font-size * 2 ) $base-header-font;
+	text-align: center;
+}

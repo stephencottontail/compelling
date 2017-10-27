@@ -1,0 +1,19 @@
+.panel {
+	right: 0;
+}
+
+.panel-toggle {
+	right: 0;
+	
+	.panel-active & {
+		right: 75%;
+		
+		@media #{$tablet-up} {
+			right: $side-column-tablet;
+		}
+		
+		@media #{$desktop-up} {
+			right: $side-column-desktop;
+		}
+	}
+}

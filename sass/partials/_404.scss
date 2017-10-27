@@ -1,0 +1,28 @@
+.not-found {
+	@include left-column();
+	@include normalize-margin( 0 1 1 3 );
+	
+	background-color: $background-color;
+	
+	@media #{$tablet-up} {
+		@include normalize-margin( 0 1 1 );
+	}
+	
+	.search-form {
+		display: flex;
+	}
+	
+	label {
+		flex: 1 auto;
+	}
+	
+	.search-field {
+		width: 100%;
+	}
+	
+	.search-submit {
+		@include normalize-margin( 0 1 );
+		
+		flex: 0 1 auto;
+	}
+}

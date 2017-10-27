@@ -1,0 +1,36 @@
+/*
+Theme Name: Compelling
+Author: Stephen Dickinson
+Author URI: http://stephencottontail.com/
+Description: Your blog deserves the best. Bold. Beautiful. Compelling.
+Version: 1.0.5
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: compelling
+Tags: one-column, custom-menu, editor-style, footer-widgets, theme-options, threaded-comments, translation-ready, blog, photography, portfolio
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import 'variables';
+@import 'mixins';
+@import 'normalize';
+
+@import 'partials/404';
+@import 'partials/a11y';
+@import 'partials/archive';
+@import 'partials/comments';
+@import 'partials/content';
+@import 'partials/footer';
+@import 'partials/front';
+@import 'partials/header';
+@import 'partials/media';
+@import 'partials/menu';
+@import 'partials/navigation';
+@import 'partials/pagination';
+@import 'partials/panel';
+@import 'partials/recent';
+@import 'partials/widgets';
+
+.sticky { /* required for theme review */ }
