@@ -1289,5 +1289,10 @@ img, figure {
     font: italic 16px "Cormorant Garamond", "Georgia", serif;
     text-transform: lowercase; }
 
+.widget_search {
+  position: static; }
+  .widget_search:before {
+    display: none; }
+
 .sticky {
   /* required for theme review */ }
