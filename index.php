@@ -40,8 +40,8 @@ get_header(); ?>
 		endwhile;
 
 		the_posts_navigation( array(
-			'prev_text' => esc_html__( '&laquo; Older Posts', 'compelling' ),
-			'next_text' => esc_html__( 'Newer Posts &raquo;', 'compelling' )
+			'prev_text' => __( '&laquo; Older Posts', 'compelling' ),
+			'next_text' => __( 'Newer Posts &raquo;', 'compelling' )
 		) );
 
 	else :

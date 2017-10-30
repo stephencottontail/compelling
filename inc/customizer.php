@@ -31,8 +31,8 @@ function compelling_customize_register( $wp_customize ) {
 	}
 	
 	$wp_customize->add_section( 'footer_text', array(
-		'title'       => esc_html__( 'Footer Text', 'compelling' ),
-		'description' => esc_html__( 'Text entered in this form will appear in place of the default footer text. A limited amount of HTML may be used.', 'compelling' ),
+		'title'       => __( 'Footer Text', 'compelling' ),
+		'description' => __( 'Text entered in this form will appear in place of the default footer text. A limited amount of HTML may be used.', 'compelling' ),
 		'priority'    => 35
 	) );
   
@@ -45,7 +45,7 @@ function compelling_customize_register( $wp_customize ) {
 	) );
   
 	$wp_customize->add_control( 'footer_text', array(
-		'label'    => esc_html__( 'Footer Text', 'compelling' ),
+		'label'    => __( 'Footer Text', 'compelling' ),
 		'section'  => 'footer_text',
 		'settings' => 'footer_text',
 		'type'     => 'text'

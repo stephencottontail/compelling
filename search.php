@@ -17,7 +17,7 @@ get_header(); ?>
 			<h1 class="archive-title">
 				<?php
 				/* translators: %s: search query. */
-				printf( esc_html__( 'Search Results for &ldquo;%s&rdquo;', 'compelling' ), get_search_query() );
+				printf( __( 'Search Results for &ldquo;%s&rdquo;', 'compelling' ), get_search_query() );
 				?>
 			</h1>
 		</header><!-- .page-header -->
@@ -36,8 +36,8 @@ get_header(); ?>
 		endwhile;
 
 		the_posts_navigation( array(
-			'prev_text' => esc_html__( '&laquo; Older Posts', 'compelling' ),
-			'next_text' => esc_html__( 'Newer Posts &raquo;', 'compelling' )
+			'prev_text' => __( '&laquo; Older Posts', 'compelling' ),
+			'next_text' => __( 'Newer Posts &raquo;', 'compelling' )
 		) );
 
 	else :
@@ -46,7 +46,7 @@ get_header(); ?>
 
 	endif; ?>
 
-</primary><!-- #main -->
+</main><!-- #primary -->
 
 <?php
 get_sidebar();

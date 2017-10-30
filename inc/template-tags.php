@@ -35,14 +35,14 @@ function compelling_entry_footer() {
 		printf( esc_html_x( 'by %s', 'post author', 'compelling' ), $author );
 		 
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'compelling' ) );
+		$categories_list = get_the_category_list( _x( ', ', 'list item separator', 'compelling' ) );
 		if ( $categories_list ) {
 			/* translators: 1: list of categories. */
 			printf( '<span class="cat-links meta-info">' . esc_html__( 'Posted in %1$s', 'compelling' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'compelling' ) );
+		$tags_list = get_the_tag_list( '', _x( ', ', 'list item separator', 'compelling' ) );
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
 			printf( '<span class="tags-links meta-info">' . esc_html__( 'Tagged %1$s', 'compelling' ) . '</span>', $tags_list ); // WPCS: XSS OK.
@@ -79,12 +79,12 @@ function compelling_show_comment( $comment, $args, $depth ) {
 		<li id="div-comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
 			<article class="pingback-body">
 				<header class="pingback-header">
-					<?php esc_html_e( 'Pingback', 'compelling' ); ?>
+					<?php _e( 'Pingback', 'compelling' ); ?>
 				</header><!-- .pingback-header -->
 				
 				<div class="pingback-content">
 					<cite><?php comment_author_link(); ?></cite>
-					<?php edit_comment_link( esc_html__( 'Edit', 'compelling' ), '<span class="pingback-edit">', '</span>' ); ?>
+					<?php edit_comment_link( __( 'Edit', 'compelling' ), '<span class="pingback-edit">', '</span>' ); ?>
 				</div>
 			</article>
 	
@@ -109,14 +109,14 @@ function compelling_show_comment( $comment, $args, $depth ) {
 							esc_html( $parent_comment->comment_author )
 						);
 						?>
-						<span class="in-reply-to"><?php printf( esc_html__( 'In reply to %s', 'compelling' ), $reply_to ); ?></span>
+						<span class="in-reply-to"><?php printf( __( 'In reply to %s', 'compelling' ), $reply_to ); ?></span>
 					<?php endif; ?>
 				</header><!-- .comment-header -->
 				
 				<div class="comment-content">
 					<?php
 					if ( '0' == $comment->comment_approved ) : ?>
-						<span class="awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'compelling' ); ?></span>
+						<span class="awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'compelling' ); ?></span>
 					<?php
 					endif;
 					
@@ -125,7 +125,7 @@ function compelling_show_comment( $comment, $args, $depth ) {
 				</div><!-- .comment-content -->
 				
 				<footer class="comment-footer">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>" class="comment-time meta-info"><time datetime="<?php comment_time( 'c' ); ?>"><?php printf( esc_html_x( '%1$s, %2$s', '1: date, 2: time', 'compelling' ),
+					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>" class="comment-time meta-info"><time datetime="<?php comment_time( 'c' ); ?>"><?php printf( _x( '%1$s, %2$s', '1: date, 2: time', 'compelling' ),
 						get_comment_date(), /* %1$s */
 						get_comment_time() /* %2$s */
 					); ?></time></a>
@@ -140,7 +140,7 @@ function compelling_show_comment( $comment, $args, $depth ) {
 							'after'     => '</span>',
 						) ) );
 						
-						edit_post_link( esc_html__( 'Edit', 'compelling' ), '<span class="comment-edit meta-info">', '</span>' );
+						edit_post_link( __( 'Edit', 'compelling' ), '<span class="comment-edit meta-info">', '</span>' );
 						?>
 					</div><!-- .comment-actions -->
 				</footer><!-- .comment-footer -->

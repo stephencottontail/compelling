@@ -29,12 +29,12 @@
 			else : ?>
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'compelling' ) ); ?>"><?php
 					/* translators: %s: CMS name, i.e. WordPress. */
-					printf( esc_html__( 'Proudly powered by %s', 'compelling' ), 'WordPress' );
+					printf( __( 'Proudly powered by %s', 'compelling' ), 'WordPress' );
 				?></a>
 				<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s', 'compelling' ), 'Compelling', '<a href="https://stephencottontail.com/">Stephen Dickinson</a>' );
+				printf( __( 'Theme: %1$s by %2$s', 'compelling' ), 'Compelling', '<a href="https://stephencottontail.com/">Stephen Dickinson</a>' );
 			
 			endif;
 			?>

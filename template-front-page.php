@@ -44,7 +44,7 @@ get_header(); ?>
 			
 			printf( '<a href="%1$s" class="see-more">%2$s</a>',
 				esc_url( get_permalink( get_option( 'page_for_posts' ) ) ),
-				esc_html__( 'See More&hellip;', 'compelling' )
+				__( 'See More&hellip;', 'compelling' )
 			);
 			?>
 		</div>

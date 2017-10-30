@@ -95,9 +95,9 @@ add_action( 'after_setup_theme', 'compelling_content_width', 0 );
  */
 function compelling_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'compelling' ),
+		'name'          => __( 'Sidebar', 'compelling' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'compelling' ),
+		'description'   => __( 'Add widgets here.', 'compelling' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -116,9 +116,9 @@ function compelling_scripts() {
 	wp_enqueue_script( 'compelling-functions', get_theme_file_uri( '/js/compelling.js' ), array( 'jquery' ), '20151215', true );
 	wp_localize_script( 'compelling-functions', 'compellingMenuText', array(
 		/* translators: this text appears only for scfeen readers, to indicate that the menu panel will be opened */
-		'open'  => esc_html__( 'open menu', 'compelling' ),
+		'open'  => __( 'open menu', 'compelling' ),
 		/* translators: this text appears only for screen readers, to indicate that the menu panel will be closed */
-		'close' => esc_html__( 'close menu', 'compelling' )
+		'close' => __( 'close menu', 'compelling' )
 	) );
 
 	wp_enqueue_script( 'compelling-skip-link-focus-fix', get_theme_file_uri( '/js/skip-link-focus-fix.js' ), array(), '20151215', true );
@@ -174,7 +174,7 @@ add_filter( 'excerpt_length', 'compelling_set_excerpt_length' );
 function compelling_set_read_more( $more ) {
 	global $post;
 	
-	$read_more_text = sprintf( esc_html__( 'Continue Reading %s', 'compelling' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' );
+	$read_more_text = sprintf( __( 'Continue Reading %s', 'compelling' ), '<span class="screen-reader-text">' . get_the_title() . '</span>' );
 	
 	return sprintf( '&hellip;<div class="read-more"><a href="%1$s" class="read-more-link" rel="bookmark">%2$s</a></div>',
 		esc_url( get_permalink() ),

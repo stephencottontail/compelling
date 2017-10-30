@@ -17,8 +17,8 @@ get_header(); ?>
 		get_template_part( 'template-parts/content', get_post_format() );
 
 		the_post_navigation( array(
-			'prev_text' => sprintf( '%1$s<span class="nav-title">%%title</span>', esc_html__( 'Previous Post', 'compelling' ) ),
-			'next_text' => sprintf( '%1$s<span class="nav-title">%%title</span>', esc_html__( 'Next Post', 'compelling' ) )
+			'prev_text' => sprintf( '%1$s<span class="nav-title">%%title</span>', __( 'Previous Post', 'compelling' ) ),
+			'next_text' => sprintf( '%1$s<span class="nav-title">%%title</span>', __( 'Next Post', 'compelling' ) )
 		) );
 
 		// If comments are open or we have at least one comment, load up the comment template.

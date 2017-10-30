@@ -32,7 +32,7 @@
 			) );
 	
 			wp_link_pages( array(
-				'before'      => sprintf( '<div class="page-links">%s', esc_html__( 'Pages:', 'compelling' ) ),
+				'before'      => sprintf( '<div class="page-links">%s', __( 'Pages:', 'compelling' ) ),
 				'after'       => '</div>',
 				'link_before' => '<span class="page-number">',
 				'link_after'  => '</span>'
