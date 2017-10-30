@@ -71,3 +71,11 @@
 		text-transform: lowercase;
 	}
 }
+
+.widget_search {
+	position: static;
+	
+	&:before {
+		display: none;
+	}
+}
