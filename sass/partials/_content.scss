@@ -70,7 +70,8 @@ article.page {
 	.entry-inner {
 		@include normalize-padding( 0 1 1 );
 		
-		.single & {
+		.single &,
+		body.page & {
 			border-bottom: none;
 		}
 		
@@ -81,7 +82,8 @@ article.page {
 			width: 65%;
 			border-bottom: 4px solid $accent-color;
 			
-			.single & {
+			.single &,
+			body.page & {
 				@include left-column();
 				
 				position: static;
