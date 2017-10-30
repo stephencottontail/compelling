@@ -831,7 +831,7 @@ article.page {
     .entry-inner {
       margin: 0 24px; } }
   .single .entry-inner {
-    width: 75%; }
+    width: 90%; }
 
 .entry-thumbnail {
   height: 100%; }
@@ -877,7 +877,7 @@ article.page {
         border-bottom: 4px solid #b7a85c; }
         .single .has-post-thumbnail .entry-inner, body.page .has-post-thumbnail .entry-inner {
           position: static;
-          width: 75%; } }
+          width: 90%; } }
     @media screen and (min-width: 800px) and (min-width: 800px) {
       .single .has-post-thumbnail .entry-inner, body.page .has-post-thumbnail .entry-inner {
         padding: 0 0 0 300px; } }

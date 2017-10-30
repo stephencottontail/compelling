@@ -18,7 +18,7 @@ article.page {
 	}
 	
 	.single & {
-		width: 75%;
+		width: 90%;
 	}
 }
 
@@ -87,7 +87,7 @@ article.page {
 				@include left-column();
 				
 				position: static;
-				width: 75%;
+				width: 90%;
 			}
 		}
 	}
