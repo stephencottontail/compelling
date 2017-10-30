@@ -14,11 +14,12 @@
 		<h1 class="page-title">
 			<?php
 			if ( is_search() ) {
-				printf( esc_html__( 'No results for &ldquo;%s&rdquo;', 'compelling' ), get_search_query() );
+				printf( __( 'No results for &ldquo;%s&rdquo;', 'compelling' ), get_search_query() );
 			} else {
-				esc_html_e( 'Nothing Found', 'compelling' );
+				_e( 'Nothing Found', 'compelling' );
 			}
 			?>
+		</h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -41,13 +42,13 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'compelling' ); ?></p>
+			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'compelling' ); ?></p>
 			<?php
 			get_search_form();
 
 		else : ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'compelling' ); ?></p>
+			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'compelling' ); ?></p>
 			<?php
 			get_search_form();
 

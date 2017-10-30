@@ -21,7 +21,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'compelling' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'compelling' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
@@ -44,7 +44,7 @@
 	</header><!-- #masthead -->
 	
 	<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
-		<button class="panel-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text"><?php esc_html_e( 'open menu', 'compelling' ); ?></span><span class="icon"></span></button>
+		<button class="panel-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="screen-reader-text"><?php _e( 'open menu', 'compelling' ); ?></span><span class="icon"></span></button>
 		<div class="panel">
 			<nav id="site-navigation" class="site-navigation">
 				<?php

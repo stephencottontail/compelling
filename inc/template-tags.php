@@ -32,20 +32,20 @@ function compelling_entry_footer() {
 			esc_html( get_the_author() )
 		);
 		
-		printf( esc_html_x( 'by %s', 'post author', 'compelling' ), $author );
+		printf( _x( 'by %s', 'post author', 'compelling' ), $author );
 		 
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( _x( ', ', 'list item separator', 'compelling' ) );
 		if ( $categories_list ) {
 			/* translators: 1: list of categories. */
-			printf( '<span class="cat-links meta-info">' . esc_html__( 'Posted in %1$s', 'compelling' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links meta-info">' . __( 'Posted in %1$s', 'compelling' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', _x( ', ', 'list item separator', 'compelling' ) );
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
-			printf( '<span class="tags-links meta-info">' . esc_html__( 'Tagged %1$s', 'compelling' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tags-links meta-info">' . __( 'Tagged %1$s', 'compelling' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 	
