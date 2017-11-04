@@ -24,6 +24,8 @@ Compelling includes a special template that can be used to create a unique front
 
 ## Changelog
 
+* Version 1.0.6, November 4, 2017
+	* Added `wp_reset_postdata` to the correct place
 * Version 1.0.5, October 30, 2017
 	* Miscellaneous minor fixes
 * Version 1.0.4, October 6, 2017

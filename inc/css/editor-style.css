@@ -1,182 +1,70 @@
 @charset "UTF-8";
-/*
- * This file controls how the TinyMCE editor is styled.
- *
- * It’s generally considered good practice to style the editor
- * so that users can get an idea of how their posts will look
- * on the actual site.
- *
- * @package Compelling
- */
-img, figure {
-  margin: 0;
-  max-width: 100%;
-  height: auto; }
+/* This file controls how the TinyMCE editor is styled.  It’s generally considered good practice to style the editor so that users can get an idea of how their posts will look on the actual site.  @package Compelling */
+img, figure { margin: 0; max-width: 100%; height: auto; }
 
-.alignleft {
-  margin: 0 24px 24px 0;
-  display: inline-block;
-  float: left; }
+.alignleft { margin: 0 24px 24px 0; display: inline-block; float: left; }
 
-.alignright {
-  margin: 0 0 24px 24px;
-  display: inline-block;
-  float: right; }
+.alignright { margin: 0 0 24px 24px; display: inline-block; float: right; }
 
-.aligncenter {
-  display: block;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto; }
+.aligncenter { display: block; clear: both; margin-left: auto; margin-right: auto; }
 
-.wp-caption {
-  margin-bottom: 24px; }
-  .wp-caption img {
-    width: 100%; }
+.wp-caption { margin-bottom: 24px; }
+.wp-caption img { width: 100%; }
 
-.wp-caption-text {
-  font: normal 16px "Cormorant Garamond", "Georgia", serif;
-  text-align: right; }
+.wp-caption-text { font: normal 16px "Cormorant Garamond", "Georgia", serif; text-align: right; }
 
-.gallery {
-  margin-bottom: 24px;
-  clear: both; }
+.gallery { margin-bottom: 24px; clear: both; }
 
-.gallery-item {
-  margin-bottom: 24px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-1 .gallery-item {
-    max-width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.3333333333%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.6666666667%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.2857142857%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.1111111111%; }
+.gallery-item { margin-bottom: 24px; display: inline-block; text-align: center; vertical-align: top; width: 100%; }
+.gallery-columns-1 .gallery-item { max-width: 100%; }
+.gallery-columns-2 .gallery-item { max-width: 50%; }
+.gallery-columns-3 .gallery-item { max-width: 33.3333333333%; }
+.gallery-columns-4 .gallery-item { max-width: 25%; }
+.gallery-columns-5 .gallery-item { max-width: 20%; }
+.gallery-columns-6 .gallery-item { max-width: 16.6666666667%; }
+.gallery-columns-7 .gallery-item { max-width: 14.2857142857%; }
+.gallery-columns-8 .gallery-item { max-width: 12.5%; }
+.gallery-columns-9 .gallery-item { max-width: 11.1111111111%; }
 
-.gallery-caption {
-  text-align: center; }
+.gallery-caption { text-align: center; }
 
-body#tinymce {
-  background-color: #151515;
-  color: #fff;
-  font-family: "Muli", "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-rendering: optimizeLegibility; }
+body#tinymce { background-color: #151515; color: #fff; font-family: "Muli", "Helvetica Neue", sans-serif; font-size: 16px; line-height: 24px; text-rendering: optimizeLegibility; }
 
-pre {
-  font-family: "Inconsolata", "Courier New", monospace, monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
+pre { font-family: "Inconsolata", "Courier New", monospace, monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
 
-blockquote {
-  margin: 24px 0;
-  padding: 24px;
-  position: relative;
-  background-color: rgba(183, 168, 92, 0.15);
-  border-left: 2px solid #b7a85c; }
-  blockquote p {
-    margin: 0; }
+blockquote { margin: 24px 0; padding: 24px; position: relative; background-color: rgba(183, 168, 92, 0.15); border-left: 2px solid #b7a85c; }
+blockquote p { margin: 0; }
 
-ol,
-ul {
-  margin: 24px 0;
-  padding: 0 0 0 24px; }
-  ol ol,
-  ol ul,
-  ul ol,
-  ul ul {
-    margin: 0; }
+ol, ul { margin: 24px 0; padding: 0 0 0 24px; }
+ol ol, ol ul, ul ol, ul ul { margin: 0; }
 
-dt {
-  font-weight: bold; }
+dt { font-weight: bold; }
 
-dd {
-  margin: 0 0 12px; }
+dd { margin: 0 0 12px; }
 
-p {
-  margin: 0 0 24px 0; }
+p { margin: 0 0 24px 0; }
 
-pre {
-  max-width: 100%;
-  overflow: auto;
-  word-wrap: break-word; }
+pre { max-width: 100%; overflow: auto; word-wrap: break-word; }
 
-table {
-  margin: 24px 0;
-  border: 1px solid #6a6a68;
-  border-collapse: collapse;
-  max-width: 100%; }
-  table th,
-  table td {
-    padding: 6px;
-    border: 1px solid #6a6a68; }
+table { margin: 24px 0; border: 1px solid #6a6a68; border-collapse: collapse; max-width: 100%; }
+table th, table td { padding: 6px; border: 1px solid #6a6a68; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Cormorant Garamond", "Georgia", serif;
-  font-weight: 300;
-  letter-spacing: -1px; }
+h1, h2, h3, h4, h5, h6 { font-family: "Cormorant Garamond", "Georgia", serif; font-weight: 300; letter-spacing: -1px; }
 
-h1 {
-  font-size: 32px;
-  line-height: 48px;
-  margin: 24px 0; }
+h1 { font-size: 32px; line-height: 48px; margin: 24px 0; }
 
-h2 {
-  font-size: 26.08px;
-  line-height: 48px;
-  margin: 24px 0; }
+h2 { font-size: 26.08px; line-height: 48px; margin: 24px 0; }
 
-h3 {
-  font-size: 24px;
-  line-height: 48px;
-  margin: 24px 0; }
+h3 { font-size: 24px; line-height: 48px; margin: 24px 0; }
 
-h4 {
-  font-size: 18.72px;
-  line-height: 24px;
-  margin: 24px 0; }
+h4 { font-size: 18.72px; line-height: 24px; margin: 24px 0; }
 
-h5 {
-  font-size: 16px;
-  line-height: 24px;
-  margin: 24px 0; }
+h5 { font-size: 16px; line-height: 24px; margin: 24px 0; }
 
-h6 {
-  font-size: 16px;
-  line-height: 24px;
-  margin: 24px 0; }
+h6 { font-size: 16px; line-height: 24px; margin: 24px 0; }
 
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
-  color: #b7a85c;
-  text-decoration: none;
-  -webkit-transition: all 350ms ease-out;
-  transition: all 350ms ease-out; }
-  a:visited {
-    color: #9b8d45; }
-  a:hover, a:active, a:focus {
-    color: #9b8d45;
-    text-decoration: underline; }
+a { background-color: transparent; /* 1 */ -webkit-text-decoration-skip: objects; /* 2 */ color: #b7a85c; text-decoration: none; -webkit-transition: all 350ms ease-out; transition: all 350ms ease-out; }
+a:visited { color: #9b8d45; }
+a:hover, a:active, a:focus { color: #9b8d45; text-decoration: underline; }
 
-.wp-caption-dd {
-  font: normal 16px "Cormorant Garamond", "Georgia", serif;
-  text-align: right; }
+.wp-caption-dd { font: normal 16px "Cormorant Garamond", "Georgia", serif; text-align: right; }
