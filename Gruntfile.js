@@ -1,19 +1,19 @@
 module.exports = function(grunt) {
 	var path = process.cwd();
 	var cwd = path.substring( path.lastIndexOf( '/' ) + 1 );
-	
+
 	grunt.initConfig( {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		cwd: cwd,
 		copy: {
 			main: {
-				files: [ 
+				files: [
 					{ expand: true, src: 'README.md', rename: function( dest, src ) { return src.replace( '.md', '.txt' ); } }
 				]
 			},
 			prepare: {
 				files: [
-					{ expand: true, src: [ '**', '!Gruntfile.js', '!package.json', '!sass/**', '!node_modules/**', '!**/*.map' ], dest: '/home/stephen/<%= cwd %>', filter: 'isFile' }
+					{ expand: true, src: [ '**', '!Gruntfile.js', '!package.json', '!sass/**', '!node_modules/**', '!**/*.map' ], dest: '/Users/stephen/Desktop/<%= cwd %>', filter: 'isFile' }
 				]
 			}
 		},
